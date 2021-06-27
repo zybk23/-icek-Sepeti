@@ -1,0 +1,115 @@
+.subHeader {
+  width: 100%;
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: red;
+  box-sizing: border-box;
+
+  .subHeader_title {
+    text-align: left;
+    font: normal normal normal 35px/15px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+  }
+
+  .subHeader_cartBar {
+    width: 343px;
+    height: 64px;
+    background: #f54257 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    position: relative;
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 20px;
+
+    @media screen and (max-width: 768px) {
+      width: 240px;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 0;
+      right: 60px;
+      margin-top: -5px;
+      border: solid #f54257;
+      background-color: #f54257;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+    }
+
+    .up {
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+    }
+
+    .subHeader_cartBar_text {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      img {
+        width: 8px;
+        height: 13px;
+      }
+
+      span {
+        color: #ffce00;
+        font-size: 12px;
+        margin-left: 3px;
+      }
+      p {
+        color: #ffffff;
+        font-size: 12px;
+        margin-left: 3px;
+      }
+    }
+
+    .subHeader_cartBar_bar {
+      color: #fff;
+      letter-spacing: 1px;
+      font-size: 8px;
+      font-weight: 500;
+      position: relative;
+      display: inline-block;
+      width: 80%;
+      margin-top: 4px;
+
+      //   &:nth-child(1) {
+      //     span:before {
+      //       width: 30%;
+      //     }
+      //   }
+
+      span {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 8px;
+        background: #000;
+        border-radius: 50px;
+
+        &:before {
+          position: absolute;
+          content: "";
+          // width: 80%;
+          height: 100%;
+          background: linear-gradient(to left, #ffce00, #dacc96);
+          border-radius: 50px;
+          animation: bar 2s ease;
+        }
+        @keyframes bar {
+          from {
+            width: 0;
+          }
+        }
+      }
+    }
+  }
+}

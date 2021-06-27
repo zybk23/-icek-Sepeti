@@ -1,0 +1,86 @@
+$card_bg_color: #044dc3;
+$search_bg_color: #f7f7f7;
+$search_button_color: #51b549;
+
+.header {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .searchbar_container {
+    width: 872px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: $search_bg_color;
+    border: 2px solid #edf1f2;
+    border-radius: 28px;
+    padding: 0 20px;
+    opacity: 1;
+
+    .searchbar_container_input {
+      width: 90%;
+      height: 40px;
+      border: none;
+      outline: none;
+      padding: 0 12px;
+      background: $search_bg_color;
+    }
+
+    .searchbar_container_button {
+      width: 66px;
+      height: 40px;
+      background: $search_button_color 0% 0% no-repeat padding-box;
+      border: 2px solid #edf1f2;
+      border-radius: 28px;
+      opacity: 1;
+      cursor: pointer;
+      color: #ffffff;
+      font: normal normal normal 18px/22px Source Sans Pro;
+    }
+  }
+  .header_cart {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 142px;
+    height: 50px;
+    background: $card_bg_color 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 28px;
+    opacity: 1;
+    cursor: pointer;
+
+    .header_cart_text {
+      text-align: left;
+      font: normal normal 600 16px/20px Source Sans Pro;
+      letter-spacing: 0px;
+      color: #ffffff;
+      opacity: 1;
+      margin-left: 2px;
+    }
+
+    .header_cart_count {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font: normal normal medium 16px/19px Rubik;
+      color: #ffffff;
+      width: 25px;
+      height: 25px;
+      background: #ff5b4d 0% 0% no-repeat padding-box;
+      border-radius: 50%;
+      top: 0;
+      right: 0;
+      margin-top: -10px;
+    }
+  }
+}

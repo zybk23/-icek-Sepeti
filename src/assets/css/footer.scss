@@ -1,0 +1,266 @@
+$textFontSize: 13px;
+$textColor: #000000;
+
+.footer {
+  width: 100%;
+  height: 1034px;
+  background: #f2f2f2 0% 0% no-repeat padding-box;
+  opacity: 1;
+  @media screen and (max-width: 1172px) {
+    height: auto;
+  }
+
+  .footer_download_info {
+    width: 100%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    .footer_download_info_card {
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      width: 100%;
+      height: 222px;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border-radius: 111px;
+      opacity: 1;
+
+      @media screen and (max-width: 1176px) {
+        justify-content: center;
+      }
+
+      .footer_download_info_card_phone {
+        position: absolute;
+        width: 352px;
+        height: 360px;
+        left: 20%;
+        bottom: 0;
+        @media screen and (max-width: 1680px) {
+          height: auto;
+          left: 12%;
+        }
+
+        @media screen and (max-width: 1176px) {
+          display: none;
+        }
+      }
+
+      .footer_download_info_card_link {
+        display: flex;
+        width: 384px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-right: 20%;
+        @media screen and (max-width: 1680px) {
+          height: auto;
+          margin-right: 12%;
+        }
+
+        @media screen and (max-width: 1176px) {
+          margin-right: 0;
+        }
+
+        .footer_download_info_card_link_topSide {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            margin-right: 20px;
+          }
+
+          .footer_download_info_card_link_topSide_text {
+            p {
+              text-align: left;
+              font: normal normal bold 18px/23px Source Sans Pro;
+              letter-spacing: 0px;
+              color: $textColor;
+              opacity: 1;
+              font-weight: bold;
+              font-size: 14px;
+            }
+
+            span {
+              text-align: left;
+              font: normal normal normal 16px/20px Source Sans Pro;
+              letter-spacing: 0px;
+              color: $textColor;
+              opacity: 1;
+              font-size: 12px;
+            }
+          }
+        }
+
+        .footer_download_info_card_link_bottomSide {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 27px;
+
+          img {
+            cursor: pointer;
+
+            &:not(:first-child) {
+              margin-left: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer_company_info {
+    width: 100%;
+    height: 455px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 110px;
+
+    @media screen and (max-width: 1172px) {
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer_company_info_leftSide {
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (max-width: 1172px) {
+        margin-bottom: 8px;
+      }
+
+      .footer_company_info_leftSide_ciceksepeti_icon {
+        width: 210px;
+        height: 40px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .footer_company_info_leftSide_socialMedia {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+
+        img {
+          cursor: pointer;
+          &:not(:first-child) {
+            margin-left: 30px;
+          }
+        }
+      }
+
+      p {
+        width: 454px;
+        text-align: left;
+        font-family: "Poppins", sans-serif;
+        letter-spacing: 0px;
+        color: $textColor;
+        margin-top: 30px;
+        font-size: $textFontSize;
+
+        a {
+          color: $textColor;
+        }
+      }
+    }
+
+    .footer_company_info_rightSide {
+      width: 60%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      @media screen and (max-width: 1172px) {
+        margin-bottom: 8px;
+        width: 100%;
+        // max-height: 200px;
+        // overflow: hidden;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        li {
+          text-align: center;
+          list-style: none;
+          text-decoration: none;
+
+          margin-bottom: 8px;
+
+          a {
+            list-style: none;
+            text-decoration: none;
+            font-family: "Poppins", sans-serif;
+            font-size: $textFontSize;
+            color: $textColor;
+          }
+
+          &:nth-child(1) {
+            color: #044dc3;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer_company_portfoy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 107px;
+
+    @media screen and (max-width: 1172px) {
+      height: auto;
+    }
+
+    .footer_company_portfoytext {
+      width: 90%;
+      height: 100%;
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      color: $textColor;
+      font-size: $textFontSize;
+    }
+  }
+
+  .footer_company_copyright {
+    width: 100%;
+    height: 107px;
+    display: flex;
+    flex-direction: column;
+
+    .footer_company_copyright_freearea {
+      width: 100%;
+      height: 50px;
+    }
+
+    .footer_company_copyright_textarea {
+      width: 100%;
+      height: 57px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #e6e6e6 0% 0% no-repeat padding-box;
+      font-family: "Poppins", sans-serif;
+      font-size: $textFontSize;
+    }
+  }
+}
