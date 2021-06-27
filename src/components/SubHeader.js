@@ -8,7 +8,6 @@ const SubHeader = () => {
   const cartOrderTotalPrice = useSelector(
     (state) => state.reducer.cartOrderTotalPrice
   );
-  console.log("cartOrderTotalPrice", (cartOrderTotalPrice / 500) * 100);
   return (
     <div
       style={{ backgroundImage: `url(${Background})` }}
