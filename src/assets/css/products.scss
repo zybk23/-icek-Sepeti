@@ -123,6 +123,10 @@
         opacity: 1;
         font-size: 12px;
         margin-top: 8px;
+
+        @media screen and (max-width: 468px) {
+          font-size: 10px;
+        }
       }
 
       .products_productsCard_freeDeliveryText {

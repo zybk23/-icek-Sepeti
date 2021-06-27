@@ -25,7 +25,7 @@ const SubHeader = () => {
               <p>ürün daha ekleyin kargo bedava</p>
             </>
           ) : (
-            <p>kargo bedava</p>
+            <p>Kargo bedava</p>
           )}
         </div>
         <div className="subHeader_cartBar_bar">

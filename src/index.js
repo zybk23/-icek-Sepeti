@@ -16,7 +16,6 @@ import "./assets/css/categories.scss";
 import "./assets/css/products.scss";
 import "./assets/css/activities.scss";
 import "./assets/css/footer.scss";
-import "./assets/css/test.scss";
 
 const middlewares = [ReduxThunk];
 const store = createStore(reducers, {}, applyMiddleware(...middlewares));

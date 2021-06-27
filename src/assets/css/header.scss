@@ -10,6 +10,12 @@ $search_button_color: #51b549;
   align-items: center;
   justify-content: space-between;
 
+  @media screen and (max-width: 768px) {
+    img {
+      display: none;
+    }
+  }
+
   .searchbar_container {
     width: 872px;
     height: 50px;
