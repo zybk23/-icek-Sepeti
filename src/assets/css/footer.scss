@@ -64,6 +64,10 @@ $textColor: #000000;
           margin-right: 0;
         }
 
+        @media screen and (max-width: 468px) {
+          align-items: center;
+        }
+
         .footer_download_info_card_link_topSide {
           display: flex;
           flex-direction: row;
@@ -108,6 +112,11 @@ $textColor: #000000;
 
             &:not(:first-child) {
               margin-left: 12px;
+            }
+
+            @media screen and (max-width: 468px) {
+              width: 150px;
+              height: 40px;
             }
           }
         }

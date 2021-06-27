@@ -71,6 +71,10 @@ $search_button_color: #51b549;
       color: #ffffff;
       opacity: 1;
       margin-left: 2px;
+
+      @media screen and (max-width: 468px) {
+        font-size: 12px;
+      }
     }
 
     .header_cart_count {
