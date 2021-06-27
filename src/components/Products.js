@@ -104,7 +104,7 @@ const Products = () => {
           ))
         ) : (
           <div className="products_warning_message">
-            <i class="fas fa-exclamation-circle"></i>
+            <i className="fas fa-exclamation-circle"></i>
             <span>Bu kategoriye ait ürün bulunmamaktadır </span>
           </div>
         )}

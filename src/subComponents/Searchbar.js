@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { filterProducts, searchProducts } from "../store/actions";
+import { useDispatch } from "react-redux";
+import { searchProducts } from "../store/actions";
 
 const Searchbar = () => {
   const dispatch = useDispatch();
   const [text, setText] = useState("");
-  const searchText = useSelector((state) => state.reducer.searchText);
 
   const handleChangeText = (e) => {
     setText(e.target.value);

@@ -16,7 +16,7 @@ const SubHeader = () => {
     >
       <h1 className="subHeader_title">ÇiçekSepeti H1</h1>
       <div className="subHeader_cartBar">
-        <i class="arrow up"></i>
+        <i className="arrow up"></i>
         <div className="subHeader_cartBar_text">
           {500 - cartOrderTotalPrice > 0 ? (
             <>
